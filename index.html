@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="hero">
+      <div class="overlay">
+        <h1>🍲 Recipe Gallery</h1>
+        <p>Find recipes using ingredients available at home</p>
+      </div>
+    </header>
+
+    <div class="container">
+      ```
+      <aside class="sidebar">
+        <div class="logo">
+          <i class="fas fa-utensils"></i>
+          <h2>Meals</h2>
+        </div>
+
+        <div class="menu-section">
+          <h3>Menu</h3>
+
+          <ul>
+            <li>All Recipes</li>
+            <li>Favorites</li>
+            <li>Quick & Easy</li>
+          </ul>
+        </div>
+
+        <div class="menu-section">
+          <h3>Meals</h3>
+
+          <ul>
+            <li>Breakfast</li>
+            <li>Main Course</li>
+            <li>Side Dishes</li>
+            <li>Snacks</li>
+            <li>Desserts</li>
+            <li>Beverages</li>
+          </ul>
+        </div>
+
+        <div class="menu-section">
+          <h3>Categories</h3>
+
+          <ul>
+            <li onclick="filterCategory('Chicken')">Chicken</li>
+
+            <li onclick="filterCategory('Seafood')">Seafood</li>
+
+            <li onclick="filterCategory('Vegetarian')">Vegetarian</li>
+
+            <li onclick="filterCategory('Dessert')">Dessert</li>
+
+            <li onclick="filterCategory('Breakfast')">Breakfast</li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="content">
+        <div class="search-box">
+          <input type="text" id="ingredient" placeholder="Enter Ingredient" />
+
+          <button onclick="searchRecipe()">Search</button>
+        </div>
+
+        <div class="view-options">
+          <span>Gallery View</span>
+          <span>List View</span>
+          <span>Table View</span>
+          
+        </div>
+
+        <div id="recipes" class="recipe-grid"></div>
+      </main>
+      ```
+    </div>
+    <input type="text" id="ingredient" placeholder="Enter Ingredient" />
+
+    <button onclick="searchRecipe()">Search</button>
+
+    <footer>
+      ```
+      <p>© 2026 Recipe Search Project | Developed by Soniya</p>
+      ```
+    </footer>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
